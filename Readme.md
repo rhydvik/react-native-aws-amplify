@@ -48,3 +48,5 @@ in the root directory and install the required packages and do a fresh build it 
 This is also configured with pre-commit hook ([husky](https://github.com/typicode/husky)), updated eslint config, some form examples, 
 axios configuration to make api calls, helper functions for setting default style for rnn-navigation and navigate through screens, some components like buttons
 header and logos. global style configs.  
+
+Happy coding ;)
