@@ -8,7 +8,7 @@ import { menuOpen } from '../../assets';
 import styles from './styles';
 import Button from '../../components/Button';
 import { BACKGROUND, PRIMARY } from '../../styles';
-import { setHomeAsAppEntry, setRoot } from '../../lib/navigationHelpers';
+import { setHomeAsAppEntry } from '../../lib/navigationHelpers';
 
 type Props = {
   componentId: string;
@@ -48,7 +48,7 @@ const SideMenu = ({ componentId }: Props) => {
           bgColor={BACKGROUND}
           color={PRIMARY}
           style={styles.menuButton}
-          onPress={() => setRoot('Settings')}
+          onPress={() => setHomeAsAppEntry('Settings')}
         />
       </View>
     </SafeAreaView>

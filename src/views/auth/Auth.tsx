@@ -11,7 +11,7 @@ import { authForm } from '../../lib/schemas';
 import Button from '../../components/Button';
 
 import Logo from '../../components/Logo/Logo';
-import { setRoot } from '../../lib/navigationHelpers';
+import { setHomeAsAppEntry } from '../../lib/navigationHelpers';
 
 // type Props = {
 // };
@@ -36,7 +36,7 @@ const AuthScreen = () => {
     })
       .then(res => {
         console.log(res);
-        setRoot('Home');
+        setHomeAsAppEntry('Home');
       })
       .catch(console.log)
       .finally(() => setIsLoading(false));

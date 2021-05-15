@@ -3,7 +3,7 @@ import { SafeAreaView, ActivityIndicator } from 'react-native';
 import { Auth } from 'aws-amplify';
 
 import styles from './styles';
-import { setRoot } from '../../lib/navigationHelpers';
+import { setHomeAsAppEntry, setRoot } from '../../lib/navigationHelpers';
 
 type Props = {
   componentId: string;
@@ -15,7 +15,7 @@ const Loader = ({ componentId }: Props) => {
     Auth.currentAuthenticatedUser()
       .then(res => {
         console.log(res, componentId);
-        setRoot('Home');
+        setHomeAsAppEntry('Home');
       })
       .catch(err => {
         console.log(err);

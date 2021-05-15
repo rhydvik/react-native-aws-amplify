@@ -5,7 +5,7 @@ import * as Views from './views';
 import { InitialState } from './types/StateTypes';
 
 export function registerScreen(store: InitialState) {
-  // Navigation.registerComponent('Home', () => Views.HomeView);
+  // Navigation.registerComponent('Home', () => Views.Settings);
   Navigation.registerComponentWithRedux(
     'Home',
     () => Views.HomeView,
@@ -27,6 +27,12 @@ export function registerScreen(store: InitialState) {
   Navigation.registerComponentWithRedux(
     'Auth',
     () => Views.AuthScreen,
+    Provider,
+    store,
+  );
+  Navigation.registerComponentWithRedux(
+    'Settings',
+    () => Views.SettingScreen,
     Provider,
     store,
   );

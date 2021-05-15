@@ -155,3 +155,12 @@ export const showModal = (screen: string, props: Object) =>
       ],
     },
   });
+
+export const openMenu = (componentId: string) =>
+  Navigation.mergeOptions(componentId, {
+    sideMenu: {
+      left: {
+        visible: true,
+      },
+    },
+  });
