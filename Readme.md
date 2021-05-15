@@ -28,7 +28,7 @@ Getting session info is simple and sleek.
 
 I do think that getting a session every time the user loads the app takes a performance toll. We can use [redux-persist](https://github.com/rt2zz/redux-persist) 
 and once the user is authenticated we manage a variable in store which tells us that the user is logged 
-in we don't have to worry about the session token refresh and any stuff like that amplify takes care of that. 
+in, we don't have to worry about the session token refresh and any stuff like that amplify takes care of that. 
 
 ## Managing dynamic env variables
 It is configured with [React native Config](https://github.com/luggit/react-native-config) to manage dynamic env variables. All you need to do is create a .env file in
